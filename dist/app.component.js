@@ -17,7 +17,7 @@ AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
         styles: ["\n\n  "],
-        template: "\n    <header>\n      <nav class=\"navbar navbar-inverse\">\n        <div class=\"container-fluid\">\n          <div class=\"navbar-header\">\n            <a href=\"#\" class=\"navbar-brand\">Angular2 Routing App</a>\n          </div>\n\n          <ul class=\"nav navbar-nav\">\n            <li><a href=\"#\">Home</a></li>\n            <li><a href=\"#\">About</a></li>\n            <li><a href=\"#\">Contact</a></li>\n          </ul>\n        </div>\n      </nav>\n    </header>\n\n    <div class=\"jumbotron text-center\">\n      <h1>The App Lives!</h1>\n      <p>{{ message }}</p>\n    </div>\n\n    <home-page></home-page>\n\n    <about-page></about-page>\n\n    <contact-page></contact-page>\n  "
+        template: "\n    <header>\n      <nav class=\"navbar navbar-inverse\">\n        <div class=\"container-fluid\">\n          <div class=\"navbar-header\">\n            <a href=\"#\" class=\"navbar-brand\">Angular2 Routing App</a>\n          </div>\n\n          <ul class=\"nav navbar-nav\">\n            <li><a href=\"#\">Home</a></li>\n            <li><a href=\"#\">About</a></li>\n            <li><a href=\"#\">Contact</a></li>\n          </ul>\n        </div>\n      </nav>\n    </header>\n\n    <main>\n      <router-outlet></router-outlet>\n    </main>\n\n  "
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

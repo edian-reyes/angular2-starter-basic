@@ -22,16 +22,10 @@ import { Component } from '@angular/core';
       </nav>
     </header>
 
-    <div class="jumbotron text-center">
-      <h1>The App Lives!</h1>
-      <p>{{ message }}</p>
-    </div>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
 
-    <home-page></home-page>
-
-    <about-page></about-page>
-
-    <contact-page></contact-page>
   `
 })
 export class AppComponent {
