@@ -12,7 +12,10 @@ var app_routing_1 = require("./app.routing");
 var app_component_1 = require("./app.component");
 var home_component_1 = require("./home/home.component");
 var about_component_1 = require("./about/about.component");
+var about_user_component_1 = require("./about/about-user.component");
 var contact_component_1 = require("./contact/contact.component");
+var not_found_component_1 = require("./not-found/not-found.component");
+var user_service_1 = require("./shared/services/user.service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -28,7 +31,12 @@ AppModule = __decorate([
             app_component_1.AppComponent,
             home_component_1.HomeComponent,
             about_component_1.AboutComponent,
-            contact_component_1.ContactComponent
+            about_user_component_1.AboutUserComponent,
+            contact_component_1.ContactComponent,
+            not_found_component_1.NotFoundComponent
+        ],
+        providers: [
+            user_service_1.UserService
         ],
         bootstrap: [app_component_1.AppComponent]
     })
